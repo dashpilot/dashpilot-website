@@ -1,0 +1,178 @@
+body {
+	font-family: "proxima-nova",sans-serif;
+	
+	padding: 0;
+	margin: 0;
+	
+}
+img {
+	border: none;
+}
+
+em{
+	font-style: normal;
+	color: #5B76EE;
+}
+
+
+#centerstage{
+	text-align: center;
+	margin-top: 18%;
+}
+
+.wrap{
+	width: 600px;
+	margin: 0 auto;
+}
+
+main{
+	
+	margin-top: 30px;
+}
+
+h1{
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 600;
+	margin-top: 50px;
+	letter-spacing: 0.03em;
+}
+
+footer{
+	margin-top: 20px;
+}
+
+.hide{
+	display: none;
+}
+
+.field{
+
+}
+
+.handle{
+	float: right;
+	margin-top: 23px;
+	cursor: move;
+}
+
+
+label{
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	margin-bottom: 5px;
+	margin-top: 15px;
+	padding: 5px;
+	padding-left: 0;
+	padding-right: 20px;
+	padding-bottom: 0;
+	height: 30px;
+}
+
+h3{
+	font-weight: 600;
+	letter-spacing: 0.03em;
+}
+
+/* dock - top */
+.dock {
+	position: relative; 
+	height: 70px; 
+	text-align: center;
+}
+.dock-container {
+	position: absolute;
+	height: 70px;
+	background: url(images/dock-bg2.gif);
+	padding-left: 20px;
+}
+a.dock-item {
+	display: block;
+	width: 40px;
+	color: #000;
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px "proxima-nova", sans-serif;
+	letter-spacing: 0.03em;
+}
+.dock-item img {
+	border: none; 
+	margin: 5px 10px 0px; 
+	width: 100%; 
+}
+.dock-item span {
+	display: none; 
+	padding-left: 20px;
+}
+
+/* dock2 - bottom */
+#dock2 {
+	width: 100%;
+	bottom: 0px;
+	position: absolute;
+	left: 0px;
+}
+.dock-container2 {
+	position: absolute;
+	height: 50px;
+	background: url(images/dock-bg.gif);
+	padding-left: 20px;
+}
+a.dock-item2 {
+	display: block; 
+	font: bold 12px "proxima-nova", sans-serif;
+	letter-spacing: 0.03em;
+	width: 40px; 
+	color: #000; 
+	bottom: 0px; 
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+}
+.dock-item2 span {
+	display: none;
+	padding-left: 20px;
+}
+.dock-item2 img {
+	border: none; 
+	margin: 5px 10px 0px; 
+	width: 100%; 
+}
+
+/* overrides */
+
+.redactor-box{
+	border: 1px solid #ced4da !important;
+	border-radius: 4px;
+	
+}
+
+.redactor-toolbar{
+	border-bottom: 1px solid #ced4da;
+	padding: 0 !important;
+	
+}
+
+.redactor-toolbar a{
+	box-shadow: none !important;
+	border-radius: 0;
+	border-right: 1px solid #ced4da;
+	margin: 0;
+	padding-bottom: 6px;
+}
+
+.redactor-toolbar a:first-child{
+border-top-left-radius: 4px;	
+}
+
+.redactor-toolbar a:hover{
+	background-color: #5B76EE;
+}
+
+.redactor-in{
+	min-height: 150px !important;
+	font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+}
