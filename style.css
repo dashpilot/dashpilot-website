@@ -97,6 +97,12 @@ em {
     color: #5B76EE;
 }
 
+#main{
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
 
 /* login screens */
 
