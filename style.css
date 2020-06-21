@@ -86,11 +86,20 @@ p {
     font-size: 18px;
 }
 
-section h4 {
+section h2, section h3, section h4 {
     text-transform: uppercase;
     font-weight: bold;
     line-height: 32px;
 }
+
+section h2{
+  font-size: 1.6rem;
+}
+
+section h3{
+  font-size: 1.2rem;
+}
+
 
 em {
     font-style: normal;
@@ -100,31 +109,9 @@ em {
 #main{
   max-width: 700px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
-
-/* login screens */
-
-.container-small {
-    width: 320px;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 auto;
-}
-
-.btn-default {
-    width: 100%;
-    padding: 10px;
-}
-
-#infoMessage {
-    text-transform: lowercase;
-}
-
-#infoMessage p:first-letter {
-    text-transform: uppercase;
-}
 
 @keyframes animatedBackground {
     0% {
@@ -199,8 +186,9 @@ section.minimal {
 }
 
 nav.minimal {
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
 }
 
 .alert-danger {
@@ -224,6 +212,10 @@ nav.minimal {
     #publish,
     #published {
         margin-top: -20px;
+    }
+
+    #logo, .navbar-brand{
+      margin-top: -42px;
     }
 }
 
@@ -251,4 +243,8 @@ nav.minimal {
     .btn-label {
         display: none;
     }
+
+
+
+
 }
