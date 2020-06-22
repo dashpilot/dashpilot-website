@@ -166,12 +166,6 @@ em {
 
 
 /* minimal */
-
-body.minimal {
-    height: calc(100% - 55px);
-    overflow: hidden;
-}
-
 header.minimal {
     height: 55px;
     position: fixed;
@@ -209,6 +203,13 @@ nav.minimal {
     width: 100%;
     padding-top: 250px;
     padding-bottom: 50px;
+}
+
+
+code.language-yaml, code.language-json{
+  border-radius: 4px;
+  padding: 20px !important;
+  margin: 20px;
 }
 
 @media only screen and (max-width: 1000px) {

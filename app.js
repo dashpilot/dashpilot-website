@@ -19,5 +19,12 @@ fetch("https://www.dashpilot.com/api/data.json").then((response) => response.jso
   var html = template(data);
 
   document.querySelector("#main").innerHTML = html;
+
+  document.querySelectorAll('pre code').forEach((block) => {
+    block.className = 'language-yaml';
+    hljs.highlightBlock(block);
+  });
+
   document.querySelector("#main").className = 'fadein';
+
 });
