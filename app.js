@@ -16,4 +16,5 @@ fetch("https://www.dashpilot.com/api/data.json").then((response) => response.jso
   var html = template(data);
 
   document.querySelector("#main").innerHTML = html;
+  document.querySelector("#main").className = 'fadein';
 });
