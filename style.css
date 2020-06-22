@@ -251,7 +251,14 @@ code.language-yaml, code.language-json{
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
+
+    #main{
+      width: 90%;
+      max-width: 90%;
+    }
+    
+
     #planet {
         top: 300px;
     }

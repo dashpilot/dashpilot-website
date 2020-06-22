@@ -11,7 +11,6 @@
   <link href="../style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs-themes@1.0.0/github.css">
 
-
 </head>
 
 <body class="minimal">
@@ -35,17 +34,17 @@
         <section>
           <p>
             {{#each entries}}
-              <a href="#{{this.id}}">{{this.title}}</a><br />
+              <a href="#{{ this.id }}">{{ this.title }}</a><br />
             {{/each}}
           </p>
         </section>
       </div>
       <div class="col-md-9">
         {{#each entries}}
-          <section id="{{this.id}}">
+          <section id="{{ this.id }}">
             <div class="content">
-              <h1>{{this.title}}</h1>
-              <div class="body">{{{this.body}}}</div>
+              <h1>{{ this.title }}</h1>
+              <div class="body">{{{ this.body }}}</div>
             </div>
           </section>
         {{/each}}
@@ -59,8 +58,7 @@
     category = 'docs';
   </script>
   <script src="../app.js"></script>
-
-
 </body>
+
 
 </html>
