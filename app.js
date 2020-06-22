@@ -21,7 +21,7 @@ fetch("https://www.dashpilot.com/content/data.json").then((response) => response
     document.querySelector("#main").innerHTML = html;
 
     document.querySelectorAll('pre code').forEach((block) => {
-        block.className = 'language-yaml';
+        block.className = 'language-json';
         hljs.highlightBlock(block);
     });
 
