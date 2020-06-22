@@ -30,14 +30,26 @@
   <div id="main"></div>
 
   <template id="post">
-    {{#each entries}}
-      <section>
-        <div class="content">
-          <h2>{{this.title}}</h2>
-          <div class="body">{{{this.body}}}</div>
-        </div>
-      </section>
-    {{/each}}
+    <div class="row">
+      <div class="col-md-3">
+        <section>
+          <p>
+            {{#each entries}}
+              <a href="#{{this.id}}">{{this.title}}</a>
+            {{/each}}
+          </p>
+        </section>
+      </div>
+      <div class="col-md-9">
+        {{#each entries}}
+          <section id="{{this.id}}">
+            <div class="content">
+              <h2>{{this.title}}</h2>
+              <div class="body">{{{this.body}}}</div>
+            </div>
+          </section>
+        {{/each}}
+      </div>
   </template>
 
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
