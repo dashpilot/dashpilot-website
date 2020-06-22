@@ -100,6 +100,10 @@ section h3{
   font-size: 1.2rem;
 }
 
+section h5{
+    font-size: 1.2rem;
+    color: #5B76EE;
+}
 
 em {
     font-style: normal;
