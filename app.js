@@ -8,9 +8,12 @@ fetch("https://www.dashpilot.com/api/data.json").then((response) => response.jso
   // preprocess markdown
   var i = 0;
   data.entries.forEach(function(item) {
-    data.entries[i].body = converter.makeHtml(item.body);
 
-    i++;
+    if (data.entries[i].category == category) {
+      data.entries[i].body = converter.makeHtml(item.body);
+      i++;
+    }
+
   });
 
   var html = template(data);
