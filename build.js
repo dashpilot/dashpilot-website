@@ -15,8 +15,8 @@ data.entries.forEach(function(item) {
 });
 
 // docs
-let mydata = {}
-let mydata.entries = data.entries.filter(x => x.category == 'docs');
+let mydata = {};
+mydata.entries = data.entries.filter((x) => x.category == "docs");
 
 var template = fs.readFileSync("./src/docs.html", "utf8");
 var pageBuilder = handlebars.compile(template);
