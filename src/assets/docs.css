@@ -48,6 +48,12 @@ header a:hover {
     margin-bottom: 50px;
 }
 
+.index a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
 p,
 ul li {
     font-size: 18px;
