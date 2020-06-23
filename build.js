@@ -22,3 +22,6 @@ var template = fs.readFileSync("./src/docs.html", "utf8");
 var pageBuilder = handlebars.compile(template);
 var pageText = pageBuilder(mydata);
 fs.writeFileSync("./public/docs.html", pageText, "utf8");
+
+var style = fs.readFileSync("./src/assets/docs.css", "utf8");
+fs.writeFileSync("./public/assets/docs.css", style, "utf8");
