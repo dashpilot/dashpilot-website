@@ -84,7 +84,10 @@ footer h3 {
 
 p, ul li {
     font-size: 18px;
-    line-height: 23px;
+}
+
+ul li{
+    line-height: 24px;
 }
 
 section h1, section h2, section h3, section h4 {
