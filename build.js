@@ -3,22 +3,22 @@ var handlebars = require("handlebars");
 var showdown = require("showdown");
 const converter = new showdown.Converter();
 
-var hbs = handlebars.create({
-    //code...
-});
-
-hbs.handlebars.registerHelper("ifeq", function(a, b, options) {
+handlebars.registerHelper("ifeq", function(a, b, options) {
     if (a == b) {
         return options.fn(this);
     }
     return options.inverse(this);
 });
 
-hbs.handlebars.registerHelper("ifnoteq", function(a, b, options) {
+handlebars.registerHelper("ifnoteq", function(a, b, options) {
     if (a != b) {
         return options.fn(this);
     }
     return options.inverse(this);
+});
+
+var hbs = handlebars.create({
+    //code...
 });
 
 var data = fs.readFileSync("./content/data.json", "utf8");
