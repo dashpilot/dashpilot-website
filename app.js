@@ -9,10 +9,14 @@ fetch("https://www.dashpilot.com/content/data.json").then((response) => response
     var i = 0;
     data.entries.forEach(function(item) {
 
+        console.log(data.entries[i].category)
+
         if (data.entries[i].category == category) {
             data.entries[i].body = converter.makeHtml(item.body);
+            console.log('ok');
             i++;
         }
+
 
     });
 
