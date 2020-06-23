@@ -7,14 +7,14 @@ var hbs = handlebars.create({
     //code...
 });
 
-hbs.registerHelper("ifeq", function(a, b, options) {
+hbs.handlebars.registerHelper("ifeq", function(a, b, options) {
     if (a == b) {
         return options.fn(this);
     }
     return options.inverse(this);
 });
 
-hbs.registerHelper("ifnoteq", function(a, b, options) {
+hbs.handlebars.registerHelper("ifnoteq", function(a, b, options) {
     if (a != b) {
         return options.fn(this);
     }
