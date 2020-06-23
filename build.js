@@ -15,9 +15,10 @@ data.entries.forEach(function(item) {
 });
 
 // docs
-//let mydata = data.entries.filter(x.category => )
+let mydata = {}
+let mydata.entries = data.entries.filter(x.category => 'docs')
 
 var template = fs.readFileSync("./src/docs.html", "utf8");
 var pageBuilder = handlebars.compile(template);
-var pageText = pageBuilder(data);
+var pageText = pageBuilder(mydata);
 fs.writeFileSync("./public/docs.html", pageText, "utf8");
