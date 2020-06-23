@@ -82,55 +82,64 @@ footer h3 {
     position: relative;
 }
 
-p, ul li {
+p,
+ul li {
     font-size: 18px;
 }
 
-section h1, section h2, section h3, section h4 {
+section h1,
+section h2,
+section h3,
+section h4 {
     text-transform: uppercase;
     font-weight: bold;
     line-height: 32px;
 }
 
-section h1, section h2{
-  font-size: 1.6rem;
+section h1,
+section h2 {
+    font-size: 1.6rem;
 }
 
-section h1{
-  margin-top: 25px;
+section h1 {
+    margin-top: 45px;
 }
 
-h2{
-  margin-top: 50px;
+#index {
+    padding-top: 45px;
 }
 
-.body h3{
-  margin-top: 20px;
-  margin-bottom: 0;
+h2 {
+    margin-top: 50px;
 }
 
-section h3{
-  font-size: 1.2rem;
+.body h3 {
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
-section h5{
+section h3 {
     font-size: 1.2rem;
-    color: #5B76EE;
+}
+
+section h5 {
+    font-size: 1.2rem;
+    color: #5b76ee;
 }
 
 em {
     font-style: normal;
-    color: #5B76EE;
+    color: #5b76ee;
 }
 
-a{
-  color: #5B76EE;
+a {
+    color: #5b76ee;
 }
 
-#main{
-  max-width: 950px;
-  margin: 0 auto;
-  margin-top: 80px;
+#main {
+    max-width: 950px;
+    margin: 0 auto;
+    margin-top: 80px;
 }
 
 #main.fadein {
@@ -138,8 +147,8 @@ a{
     transition: 1s opacity;
 }
 
-.index{
-  padding-top: 25px;
+.index {
+    padding-top: 25px;
 }
 
 @keyframes animatedBackground {
@@ -189,6 +198,7 @@ a{
 
 
 /* minimal */
+
 header.minimal {
     height: 55px;
     position: fixed;
@@ -228,11 +238,11 @@ nav.minimal {
     padding-bottom: 50px;
 }
 
-
-code.language-yaml, code.language-json{
-  border-radius: 4px;
-  padding: 20px !important;
-  margin: 20px;
+code.language-yaml,
+code.language-json {
+    border-radius: 4px;
+    padding: 20px !important;
+    margin: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -243,23 +253,20 @@ code.language-yaml, code.language-json{
     #published {
         margin-top: -20px;
     }
-
-    #logo, .navbar-brand{
-      margin-top: -42px;
+    #logo,
+    .navbar-brand {
+        margin-top: -42px;
     }
-    #side{
+    #side {
         display: none;
     }
 }
 
 @media only screen and (max-width: 800px) {
-
-    #main{
-      width: 90%;
-      max-width: 90%;
+    #main {
+        width: 90%;
+        max-width: 90%;
     }
-
-
     #planet {
         top: 300px;
     }
@@ -283,8 +290,4 @@ code.language-yaml, code.language-json{
     .btn-label {
         display: none;
     }
-
-
-
-
 }
