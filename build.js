@@ -3,8 +3,6 @@ var handlebars = require("handlebars");
 var showdown = require("showdown");
 const converter = new showdown.Converter();
 
-var category = "docs";
-var template = fs.readFileSync("./src/docs.html", "utf8");
 var data = fs.readFileSync("./content/data.json", "utf8");
 data = JSON.parse(data);
 
@@ -16,6 +14,8 @@ data.entries.forEach(function(item) {
     i++;
 });
 
+// docs
+var template = fs.readFileSync("./src/docs.html", "utf8");
 var pageBuilder = handlebars.compile(template);
 var pageText = pageBuilder(data);
 fs.writeFileSync("./public/docs.html", pageText, "utf8");
