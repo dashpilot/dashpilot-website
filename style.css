@@ -82,7 +82,7 @@ footer h3 {
     position: relative;
 }
 
-p {
+p, ul li {
     font-size: 18px;
 }
 
@@ -257,7 +257,7 @@ code.language-yaml, code.language-json{
       width: 90%;
       max-width: 90%;
     }
-    
+
 
     #planet {
         top: 300px;
