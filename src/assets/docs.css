@@ -107,4 +107,7 @@ code.language-json {
     #title {
         display: none;
     }
+    section {
+        padding-top: 25px;
+    }
 }
