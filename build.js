@@ -5,6 +5,7 @@ var handlebars = require("handlebars");
 
 var template = fs.readFileSync("./src/test/index.html", "utf8");
 var data = fs.readFileSync("./content/data.json", "utf8");
+data = JSON.parse(data);
 
 var pageBuilder = handlebars.compile(template);
 var pageText = pageBuilder(data);
