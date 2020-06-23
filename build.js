@@ -1,5 +1,3 @@
-// test
-var http = require("http");
 var fs = require("fs");
 var handlebars = require("handlebars");
 
