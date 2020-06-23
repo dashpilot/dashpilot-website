@@ -45,6 +45,7 @@ header a:hover {
     max-width: 850px;
     margin: 0 auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 p,
@@ -66,7 +67,6 @@ section h2 {
     font-size: 1.6rem;
 }
 
-.index,
 section {
     padding-top: 45px;
 }
