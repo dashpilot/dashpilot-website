@@ -67,7 +67,11 @@ section h2 {
 }
 
 section h1 {
-    margin-top: 25px;
+    margin-top: 45px;
+}
+
+.index {
+    margin-top: 45px;
 }
 
 h2 {
