@@ -249,6 +249,9 @@ code.language-yaml, code.language-json{
     #logo, .navbar-brand{
       margin-top: -42px;
     }
+    #side{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 800px) {
