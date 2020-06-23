@@ -3,14 +3,18 @@ var handlebars = require("handlebars");
 var showdown = require("showdown");
 const converter = new showdown.Converter();
 
-handlebars.registerHelper("ifeq", function(a, b, options) {
+var hbs = handlebars.create({
+    //code...
+});
+
+hbs.registerHelper("ifeq", function(a, b, options) {
     if (a == b) {
         return options.fn(this);
     }
     return options.inverse(this);
 });
 
-handlebars.registerHelper("ifnoteq", function(a, b, options) {
+hbs.registerHelper("ifnoteq", function(a, b, options) {
     if (a != b) {
         return options.fn(this);
     }
@@ -30,6 +34,6 @@ data.entries.forEach(function(item) {
 
 // docs
 var template = fs.readFileSync("./src/docs.html", "utf8");
-var pageBuilder = handlebars.compile(template);
+var pageBuilder = hbs.compile(template);
 var pageText = pageBuilder(data);
 fs.writeFileSync("./public/docs.html", pageText, "utf8");
