@@ -3,6 +3,20 @@ var handlebars = require("handlebars");
 var showdown = require("showdown");
 const converter = new showdown.Converter();
 
+handlebars.registerHelper("ifeq", function(a, b, options) {
+    if (a == b) {
+        return options.fn(this);
+    }
+    return options.inverse(this);
+});
+
+handlebars.registerHelper("ifnoteq", function(a, b, options) {
+    if (a != b) {
+        return options.fn(this);
+    }
+    return options.inverse(this);
+});
+
 var data = fs.readFileSync("./content/data.json", "utf8");
 data = JSON.parse(data);
 
