@@ -91,3 +91,17 @@ section h5 {
     font-size: 1.2rem;
     color: #5b76ee;
 }
+
+code.language-yaml,
+code.language-json {
+    border-radius: 4px;
+    padding: 20px !important;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    #main {
+        width: 90%;
+        max-width: 90%;
+    }
+}
