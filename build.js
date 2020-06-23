@@ -3,24 +3,6 @@ var handlebars = require("handlebars");
 var showdown = require("showdown");
 const converter = new showdown.Converter();
 
-handlebars.registerHelper("ifeq", function(a, b, options) {
-    if (a == b) {
-        return options.fn(this);
-    }
-    return options.inverse(this);
-});
-
-handlebars.registerHelper("ifnoteq", function(a, b, options) {
-    if (a != b) {
-        return options.fn(this);
-    }
-    return options.inverse(this);
-});
-
-var hbs = handlebars.create({
-    //code...
-});
-
 var data = fs.readFileSync("./content/data.json", "utf8");
 data = JSON.parse(data);
 
@@ -33,7 +15,9 @@ data.entries.forEach(function(item) {
 });
 
 // docs
+//let mydata = data.entries.filter(x.category => )
+
 var template = fs.readFileSync("./src/docs.html", "utf8");
-var pageBuilder = hbs.compile(template);
+var pageBuilder = handlebars.compile(template);
 var pageText = pageBuilder(data);
 fs.writeFileSync("./public/docs.html", pageText, "utf8");
