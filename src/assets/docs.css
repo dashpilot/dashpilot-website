@@ -42,9 +42,9 @@ header a:hover {
 }
 
 #main {
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
-    margin-top: 75px;
+    margin-top: 50px;
 }
 
 p,
@@ -66,12 +66,9 @@ section h2 {
     font-size: 1.6rem;
 }
 
-section h1 {
-    margin-top: 45px;
-}
-
-.index {
-    margin-top: 45px;
+.index,
+section {
+    padding-top: 45px;
 }
 
 h2 {
