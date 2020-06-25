@@ -1,6 +1,6 @@
 {
     "config": {
-        "path": "public/content",
+        "path": "content",
         "siteurl": ""
     },
     "layouts": [{
