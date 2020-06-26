@@ -118,6 +118,10 @@ code.language-json {
     padding: 20px !important;
 }
 
+.article{
+  margin-top: 10px;
+}
+
 .box {
     border: 1px solid #DDD;
     min-height: 150px;
