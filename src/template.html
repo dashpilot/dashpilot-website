@@ -24,24 +24,18 @@
     <div class="row">
       <div class="col-md-3 index">
         <section id="sidenav">
-          <p>{{#each entries}}
-              <a href="#{{ this.id }}">{{this.title}}</a>{{/each}}</p>
+          <p>{{#each entries}}<a href="#{{ this.id }}">{{this.title}}</a>{{/each}}</p>
         </section>
       </div>
-      <div class="col-md-9">
-        {{#each entries}}
-          {{#ifCond this.category 'docs'}}
+      <div class="col-md-9">{{#each entries}} {{#ifCond this.category 'docs'}}
             <section id="{{ this.id }}">
               <div class="content">
-                <h1>{{this.title}}</h1>
+                <h1>{{this.title}}
+                </h1>
                 <div class="body">{{{ this.body }}}</div>
               </div>
             </section>
-          {{/ifCond}}
-          {{#ifCond this.category 'docs'}}
-            blog
-          {{/ifCond}}
-        {{/each}}
+          {{/ifCond}} {{#ifCond this.category 'blog'}} blog {{/ifCond}} {{/each}}
       </div>
     </div>
   </div>
