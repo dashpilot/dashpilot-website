@@ -9,6 +9,8 @@
             "name": "intro",
             "description": "intro",
             "type": "textarea"
-        }]
+        }],
+        "name": "default",
+        "fields": []
     }]
 }
