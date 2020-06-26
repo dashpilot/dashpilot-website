@@ -46,6 +46,7 @@ header a:hover {
 
 #nav {
     position: fixed;
+    margin-top: 45px;
 }
 
 .index a {
