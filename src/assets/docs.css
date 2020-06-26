@@ -7,9 +7,7 @@ body {
 
 header {
     background-color: #5b76ee;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
 }
 
 a {
@@ -34,7 +32,7 @@ header a:hover {
 
 #logo {
     width: 70px;
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 #title {
@@ -43,9 +41,11 @@ header a:hover {
 
 #main {
     max-width: 950px;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto;
+}
+
+.index {
+    position: fixed;
 }
 
 .index a {
@@ -107,14 +107,14 @@ code.language-json {
     padding: 20px !important;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and(max-width: 800px) {
     #main {
         width: 90%;
         max-width: 90%;
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and(max-width: 750px) {
     #title {
         display: none;
     }
