@@ -5,7 +5,7 @@ const converter = new showdown.Converter();
 
 handlebars.registerHelper('ifEq', function(v1, v2, options) { if (v1 === v2) { return options.fn(this); } return options.inverse(this); });
 
-var data = fs.readFileSync("./content/data.json", "utf8");
+var data = fs.readFileSync("./public/content/data.json", "utf8");
 data = JSON.parse(data);
 
 // preprocess markdown
