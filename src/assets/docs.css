@@ -118,6 +118,11 @@ code.language-json {
         width: 90%;
         max-width: 90%;
     }
+    #sidenav {
+        width: 100%;
+        position: relative;
+        padding-top: 0;
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -127,8 +132,5 @@ code.language-json {
     section {
         padding-top: 25px;
     }
-    #sidenav {
-        position: relative;
-        padding-top: 0;
-    }
+
 }
