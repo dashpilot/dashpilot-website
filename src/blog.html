@@ -25,25 +25,23 @@
       {{#ifEq this.category 'blog'}}
         <section id="{{ this.id }}">
           <div class="content">
-            <div class="row">
-              <div class="col-3">
-                <div class="box" style="background-image: url(/content/images/{{this.images.[0].filename}});"></div>
-              </div>
-              <div class="col-9">
+            <div class="box">
+              <div class="row">
+                <div class="col-3 image" style="background-image: url(/content/images/{{this.images.[0].filename}});">
 
-                <h1>{{this.title}}
-                </h1>
-                <div class="body">
-                  {{this.intro}}
+                </div>
+                <div class="col-9">
+                  <div class="body">
+                    <h1>{{this.title}}</h1>
 
-
+                    {{this.intro}}
+                  </div>
                 </div>
               </div>
             </div>
-            <details>
-              <summary>read more</summary>
-              <p>{{{ this.body }}}</p>
-            </details>
+            <div id="readmore-{{ this.id }}" class="readmore">
+              {{this.body}}
+            </div>
           </div>
         </section>
       {{/ifEq}}

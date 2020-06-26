@@ -5,13 +5,13 @@ document.querySelectorAll('pre code').forEach((block) => {
 
 let readMore = false;
 
-document.querySelectorAll('summary').forEach((item) => {
+document.querySelectorAll('.box').forEach((item) => {
   item.addEventListener('click', function() {
     readMore = !readMore
     if (readMore === true) {
-      item.innerHTML = 'read less'
+      item.closest('.readmore').style.display = 'block';
     } else {
-      item.innerHTML = 'read more'
+      item.closest('.readmore').style.display = 'none';
     }
   });
 });

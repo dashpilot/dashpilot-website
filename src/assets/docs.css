@@ -119,15 +119,16 @@ code.language-json {
 }
 
 .box{
-  width: 150px;
-  height: 150px;
   border: 1px solid #DDD;
+}
+
+.box .image{
   background-size: cover;
   background-position: center;
 }
 
-summary{
-  padding-top: 10px;
+.readmore{
+  display: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -150,8 +151,4 @@ summary{
         padding-top: 25px;
     }
 
-    .box{
-      width: 75px;
-      height: 75px;
-    }
 }
