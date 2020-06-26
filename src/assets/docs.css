@@ -113,6 +113,14 @@ code.language-json {
     padding: 20px !important;
 }
 
+.box{
+  width: 150px;
+  height: 150px;
+  border: 1px solid #DDD;
+  background-size: cover;
+  background-position: center;
+}
+
 @media only screen and (max-width: 1000px) {
     #main {
         width: 90%;
