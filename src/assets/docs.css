@@ -128,8 +128,8 @@ code.language-json {
     background-position: center center;
 }
 
-.box .row{
-  height: 100%;
+.box .intro{
+  min-height: 150px;
 }
 
 .intro{
