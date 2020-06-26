@@ -44,9 +44,9 @@ header a:hover {
     margin: 50px auto;
 }
 
-#nav {
+#sidenav {
     position: fixed;
-    margin-top: 45px;
+    padding-top: 45px;
 }
 
 .index a {
