@@ -124,17 +124,18 @@ code.language-json {
 
 .box {
     border: 1px solid #DDD;
-    min-height: 150px;
+    min-height: 130px;
     cursor: pointer;
 }
 
 .box .image {
     background-size: cover;
     background-position: center center;
+    border-right: 1px solid #DDD;
 }
 
 .box .intro{
-  min-height: 150px;
+  min-height: 130px;
 }
 
 .intro{
