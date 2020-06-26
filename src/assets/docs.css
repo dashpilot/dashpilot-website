@@ -44,6 +44,11 @@ header a:hover {
     margin: 50px auto;
 }
 
+#main.blog {
+    max-width: 650px;
+    margin: 50px auto;
+}
+
 .index {
     position: relative;
 }
