@@ -122,4 +122,8 @@ code.language-json {
     section {
         padding-top: 25px;
     }
+    #sidenav {
+        position: relative;
+        padding-top: 45px;
+    }
 }
