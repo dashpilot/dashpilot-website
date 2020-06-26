@@ -118,18 +118,23 @@ code.language-json {
     padding: 20px !important;
 }
 
-.box{
-  border: 1px solid #DDD;
-  min-height: 200px;
+.box {
+    border: 1px solid #DDD;
+    min-height: 150px;
 }
 
-.box .image{
-  background-size: cover;
-  background-position: center;
+.box .image {
+    background-size: cover;
+    background-position: center;
 }
 
-.readmore{
-  display: none;
+.intro{
+  padding: 20px;
+  padding-left: 0;
+}
+
+.readmore {
+    display: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -151,5 +156,4 @@ code.language-json {
     section {
         padding-top: 25px;
     }
-
 }

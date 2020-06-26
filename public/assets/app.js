@@ -8,10 +8,12 @@ let readMore = false;
 document.querySelectorAll('.box').forEach((item) => {
   item.addEventListener('click', function() {
     readMore = !readMore
+    let id = item.getAttribute('id');
+
     if (readMore === true) {
-      item.closest('.readmore').style.display = 'block';
+      document.querySelector('#readmore-' + id).style.display = 'block';
     } else {
-      item.closest('.readmore').style.display = 'none';
+      document.querySelector('#readmore-' + id).style.display = 'none';
     }
   });
 });
