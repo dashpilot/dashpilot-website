@@ -113,20 +113,16 @@ code.language-json {
     padding: 20px !important;
 }
 
-@media only screen and (max-width: 1010px) {
-
+@media only screen and (max-width: 1000px) {
+    #main {
+        width: 90%;
+        max-width: 90%;
+    }
     #sidenav {
         width: 100%;
         position: relative;
         padding-top: 0;
     }
-}
-
-@media only screen and (max-width: 900px) {
-#main {
-    width: 90%;
-    max-width: 90%;
-}
 }
 
 @media only screen and (max-width: 750px) {
