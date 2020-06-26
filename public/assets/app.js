@@ -9,9 +9,9 @@ document.querySelectorAll('summary').forEach((item) => {
   item.addEventListener('click', function() {
     readMore = !readMore
     if (readMore === true) {
-      item.innerHTML = 'Read less'
+      item.innerHTML = 'read less'
     } else {
-      item.innerHTML = 'Read more'
+      item.innerHTML = 'read more'
     }
   });
 });
