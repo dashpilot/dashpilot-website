@@ -16,7 +16,7 @@
     <div class="row no-gutters">
       <div class="col-3">
         <a href="../"> <img src="https://www.dashpilot.com/assets/img/rocketlogo.png" id="logo" /> </a> <a href="/" id="title"> DashPilot</a> </div>
-      <div class="col-9 text-right" id="nav"> <a href="/"> Home</a> <a href="docs.html"> Docs</a> <a href="blog.html"> Blog</a> </div>
+      <div class="col-9 text-right" id="nav"> <a href="/"> Home</a> <a href="docs"> Docs</a> <a href="blog"> Blog</a> </div>
     </div>
     </div>
   </header>
@@ -32,28 +32,6 @@
               <div class="content">
                 <h1>{{this.title}}</h1>
                 <div class="body">{{{ this.body }}}</div>
-              </div>
-            </section>
-          {{/ifEq}} {{#ifEq this.category 'blog'}}
-            <section id="{{ this.id }}">
-              <div class="content">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="box" style="background-image: url(/content/images/{{this.images.[0].filename}});"></div>
-                  </div>
-                  <div class="col-md-9">
-
-                    <h1>{{this.title}}
-                    </h1>
-                    <div class="body">
-                      {{this.intro}}
-                      <details>
-                        <summary>read more...</summary>
-                        <p>{{{ this.body }}}</p>
-                      </details>
-                    </div>
-                  </div>
-                </div>
               </div>
             </section>
           {{/ifEq}} {{/each}}

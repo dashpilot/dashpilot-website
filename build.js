@@ -18,12 +18,12 @@ data.entries.forEach(function(item) { data.entries[i].body = converter.makeHtml(
 let mydata = {};
 mydata.entries = data.entries.filter((x) => x.category == "docs");
 mydata.page = 'Docs';
-compile(mydata, "template.html", "docs.html");
+compile(mydata, "docs.html", "docs.html");
 
 // blog
 mydata.entries = data.entries.filter((x) => x.category == "blog");
 mydata.page = 'Blog';
-compile(mydata, "template.html", "blog.html");
+compile(mydata, "blog.html", "blog.html");
 
 // copy style
 var style = fs.readFileSync("./src/assets/docs.css", "utf8");
