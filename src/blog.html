@@ -23,7 +23,7 @@
   <div id="main" class="blog">
     {{#each entries}}
       {{#ifEq this.category 'blog'}}
-        <article>
+        <section class="post">
           <div class="content">
             <div class="box" id="{{ this.id }}">
               <div class="row no-gutters">
@@ -35,16 +35,17 @@
                     <h1>{{this.title}}</h1>
 
                     {{this.intro}}
+                    <br><br>read more
                   </div>
                 </div>
               </div>
               <div id="readmore-{{ this.id }}" class="readmore">
-                {{this.body}}
+                {{{this.body}}}
               </div>
             </div>
 
           </div>
-        </article>
+        </section>
       {{/ifEq}}
     {{/each}}
 

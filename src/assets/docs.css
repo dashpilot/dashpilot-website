@@ -118,13 +118,14 @@ code.language-json {
     padding: 20px !important;
 }
 
-.article{
+.section.post{
   margin-top: 10px;
 }
 
 .box {
     border: 1px solid #DDD;
     min-height: 150px;
+    cursor: pointer;
 }
 
 .box .image {
@@ -143,6 +144,7 @@ code.language-json {
 
 .readmore {
     display: none;
+    padding: 20px;
 }
 
 @media only screen and (max-width: 1000px) {
