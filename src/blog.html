@@ -26,15 +26,16 @@
         <section id="{{ this.id }}">
           <div class="content">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-3">
                 <div class="box" style="background-image: url(/content/images/{{this.images.[0].filename}});"></div>
               </div>
-              <div class="col-md-9">
+              <div class="col-9">
 
                 <h1>{{this.title}}
                 </h1>
                 <div class="body">
                   {{this.intro}}
+                  <br><br>
                   <details>
                     <summary>read more...</summary>
                     <p>{{{ this.body }}}</p>
@@ -44,7 +45,8 @@
             </div>
           </div>
         </section>
-      {{/ifEq}} {{/each}}
+      {{/ifEq}}
+    {{/each}}
 
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
