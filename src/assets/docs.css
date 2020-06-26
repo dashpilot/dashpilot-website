@@ -44,10 +44,14 @@ header a:hover {
     margin: 50px auto;
 }
 
+.index {
+    position: relative;
+}
+
 #sidenav {
     position: fixed;
     padding-top: 45px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .index a {
@@ -124,7 +128,6 @@ code.language-json {
         padding-top: 25px;
     }
     #sidenav {
-        position: relative;
-        padding-top: 45px;
+        position: relative !important;
     }
 }
