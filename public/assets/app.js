@@ -3,6 +3,8 @@ document.querySelectorAll('pre code').forEach((block) => {
   hljs.highlightBlock(block);
 });
 
+let readMore = false;
+
 document.querySelectorAll('summary').forEach((item) => {
   item.addEventListener('click', function() {
     readMore = !readMore
