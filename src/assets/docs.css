@@ -51,7 +51,7 @@ header a:hover {
 #sidenav {
     position: fixed;
     padding-top: 45px;
-    width: 100%;
+    width: 180px;
 }
 
 .index a {
@@ -113,14 +113,14 @@ code.language-json {
     padding: 20px !important;
 }
 
-@media only screen and(max-width: 800px) {
+@media only screen and (max-width: 800px) {
     #main {
         width: 90%;
         max-width: 90%;
     }
 }
 
-@media only screen and(max-width: 750px) {
+@media only screen and (max-width: 750px) {
     #title {
         display: none;
     }
@@ -128,6 +128,7 @@ code.language-json {
         padding-top: 25px;
     }
     #sidenav {
-        position: relative !important;
+        position: relative;
+        padding-top: 0;
     }
 }
