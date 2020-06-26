@@ -4,18 +4,10 @@
         "siteurl": ""
     },
     "layouts": [{
-        "name": "posts",
+        "name": "blog",
         "fields": [{
-            "name": "subtitle",
-            "description": "subtitle",
-            "type": "text"
-        }, {
-            "name": "test",
-            "description": "test",
-            "type": "toggle"
-        }, {
-            "name": "summary",
-            "description": "summary",
+            "name": "intro",
+            "description": "intro",
             "type": "textarea"
         }]
     }]

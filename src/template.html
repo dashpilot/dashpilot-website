@@ -27,7 +27,7 @@
           <p>{{#each entries}}<a href="#{{ this.id }}">{{this.title}}</a>{{/each}}</p>
         </section>
       </div>
-      <div class="col-md-9">{{#each entries}} {{#ifCond this.category 'docs'}}
+      <div class="col-md-9">{{#each entries}} {{#ifEq this.category 'docs'}}
             <section id="{{ this.id }}">
               <div class="content">
                 <h1>{{this.title}}
@@ -35,7 +35,22 @@
                 <div class="body">{{{ this.body }}}</div>
               </div>
             </section>
-          {{/ifCond}} {{#ifCond this.category 'blog'}} blog {{/ifCond}} {{/each}}
+          {{/ifEq}}
+          {{#ifEq this.category 'blog'}}
+            <section id="{{ this.id }}">
+              <div class="content">
+                <h1>{{this.title}}
+                </h1>
+                <div class="body">
+                  <details>
+                    <summary>{{this.intro}}</summary>
+                    <p>{{{ this.body }}}</p>
+                  </details>
+                </div>
+              </div>
+            </section>
+          {{/ifEq}}
+        {{/each}}
       </div>
     </div>
   </div>

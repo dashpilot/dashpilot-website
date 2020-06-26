@@ -3,7 +3,7 @@ var handlebars = require("handlebars");
 var showdown = require("showdown");
 const converter = new showdown.Converter();
 
-handlebars.registerHelper('ifCond', function(v1, v2, options) {
+handlebars.registerHelper('ifEq', function(v1, v2, options) {
   if (v1 === v2) {
     return options.fn(this);
   }
