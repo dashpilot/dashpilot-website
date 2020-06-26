@@ -120,6 +120,7 @@ code.language-json {
 
 .box{
   border: 1px solid #DDD;
+  min-height: 200px;
 }
 
 .box .image{
