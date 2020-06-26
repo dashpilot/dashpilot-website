@@ -118,14 +118,18 @@ code.language-json {
     padding: 20px !important;
 }
 
-.section.post{
+section.post{
   padding-top: 10px;
 }
 
 .box {
     border: 1px solid #DDD;
-    min-height: 130px;
+    min-height: 150px;
     cursor: pointer;
+}
+
+.box .intro{
+  min-height: 150px;
 }
 
 .box .image {
@@ -134,9 +138,7 @@ code.language-json {
     border-right: 1px solid #DDD;
 }
 
-.box .intro{
-  min-height: 130px;
-}
+
 
 .intro{
   padding: 20px;
