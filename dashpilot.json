@@ -1,0 +1,22 @@
+{
+    "config": {
+        "path": "content",
+        "siteurl": ""
+    },
+    "layouts": [{
+        "name": "posts",
+        "fields": [{
+            "name": "subtitle",
+            "description": "subtitle",
+            "type": "text"
+        }, {
+            "name": "test",
+            "description": "test",
+            "type": "toggle"
+        }, {
+            "name": "summary",
+            "description": "summary",
+            "type": "textarea"
+        }]
+    }]
+}
