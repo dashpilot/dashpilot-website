@@ -8,6 +8,11 @@ body {
 header {
     background-color: #5b76ee;
     padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
 }
 
 a {
@@ -79,7 +84,7 @@ ul li {
     text-transform: uppercase;
     font-weight: 300;
     line-height: 32px;
-    margin-top: 70px;
+    margin-top: 120px;
     margin-bottom: 70px;
 }
 
