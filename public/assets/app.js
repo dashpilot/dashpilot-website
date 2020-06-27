@@ -3,17 +3,19 @@ document.querySelectorAll('pre code').forEach((block) => {
   hljs.highlightBlock(block);
 });
 
-let readMore = false;
-
 document.querySelectorAll('.box').forEach((item) => {
   item.addEventListener('click', function() {
-    readMore = !readMore
     let id = item.getAttribute('id');
-
-    if (readMore === true) {
-      document.querySelector('#readmore-' + id).style.display = 'block';
+    let el = document.querySelector('#readmore-' + id);
+    if (isHidden(el)) {
+      el.style.display = 'block';
     } else {
-      document.querySelector('#readmore-' + id).style.display = 'none';
+      el.style.display = 'none';
     }
   });
 });
+
+function isHidden(el) {
+  var style = window.getComputedStyle(el);
+  return (style.display === 'none')
+}
