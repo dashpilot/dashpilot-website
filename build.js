@@ -37,6 +37,10 @@ compile(mydata, "blog.html", "blog.html");
 var style = fs.readFileSync("./src/assets/docs.css", "utf8");
 fs.writeFileSync("./public/assets/docs.css", style, "utf8");
 
+// copy js
+var js = fs.readFileSync("./src/assets/app.js", "utf8");
+fs.writeFileSync("./public/assets/app.js", js, "utf8");
+
 function compile(mydata, src, dest) {
     var template = fs.readFileSync("./src/" + src, "utf8");
     var pageBuilder = handlebars.compile(template);
