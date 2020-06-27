@@ -118,8 +118,8 @@ code.language-json {
     padding: 20px !important;
 }
 
-section.post{
-  padding-top: 20px;
+section.post {
+    padding-top: 20px;
 }
 
 .box {
@@ -128,12 +128,12 @@ section.post{
     cursor: pointer;
 }
 
-.box:hover{
-  background-color: #EEEEEE;
+.box:hover {
+    background-color: #EEEEEE;
 }
 
-.box .intro{
-  min-height: 150px;
+.box .intro {
+    min-height: 150px;
 }
 
 .box .image {
@@ -142,14 +142,13 @@ section.post{
     border-right: 1px solid #DDD;
 }
 
-.intro{
-  padding: 20px;
+.intro {
+    padding: 20px;
 }
 
 .readmore {
     display: none;
-    padding: 20px;
-    padding-top: 30px;
+    padding: 30px;
     border: 1px solid #DDD;
     border-top: 0;
 }
