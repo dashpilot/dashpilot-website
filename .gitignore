@@ -2,3 +2,5 @@
 node_modules
 public/docs.html
 public/blog.html
+public/assets/app.js
+public/assets/docs.css
