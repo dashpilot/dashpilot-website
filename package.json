@@ -8,7 +8,7 @@
     },
     "scripts": {
         "build": "node build.js",
-        "dev": "node build-live.js"
+        "dev": "dev-refresh src --serve public --cmd 'npm run build'"
     },
     "repository": {
         "type": "git",
@@ -20,12 +20,13 @@
         "url": "https://github.com/dashpilot/dashpilot-website/issues"
     },
     "homepage": "https://github.com/dashpilot/dashpilot-website#readme",
-    "devdependencies": {
-        "livereload": "^0.9.1"
-    },
     "dependencies": {
         "fs": "0.0.1-security",
         "handlebars": "^4.7.6",
         "showdown": "^1.9.1"
+    },
+    "devDependencies": {
+        "dev-refresh": "^1.2.1",
+        "watch": "^1.0.2"
     }
 }
