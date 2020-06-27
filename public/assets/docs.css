@@ -55,7 +55,6 @@ header a:hover {
 
 #sidenav {
     position: fixed;
-    padding-top: 45px;
     width: 200px;
 }
 
@@ -76,6 +75,14 @@ ul li {
     font-size: 18px;
 }
 
+.text-center h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 32px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
 section h1,
 section h2,
 section h3,
@@ -91,7 +98,7 @@ section h2 {
 }
 
 section {
-    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 h2 {
@@ -119,17 +126,17 @@ code.language-json {
 }
 
 section.post {
-    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .box {
-    border: 1px solid #DDD;
+    border: 1px solid #ddd;
     min-height: 150px;
     cursor: pointer;
 }
 
 .box:hover {
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
 }
 
 .box .intro {
@@ -139,7 +146,7 @@ section.post {
 .box .image {
     background-size: cover;
     background-position: center center;
-    border-right: 1px solid #DDD;
+    border-right: 1px solid #ddd;
 }
 
 .intro {
@@ -149,7 +156,7 @@ section.post {
 .readmore {
     display: none;
     padding: 30px;
-    border: 1px solid #DDD;
+    border: 1px solid #ddd;
     border-top: 0;
 }
 

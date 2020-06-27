@@ -1,2 +1,4 @@
 .DS_Store
 node_modules
+public/docs.html
+public/blog.html

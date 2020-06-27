@@ -7,7 +7,8 @@
         "doc": "docs"
     },
     "scripts": {
-        "build": "node build.js"
+        "build": "node build.js",
+        "dev": "node build-live.js"
     },
     "repository": {
         "type": "git",
@@ -19,6 +20,9 @@
         "url": "https://github.com/dashpilot/dashpilot-website/issues"
     },
     "homepage": "https://github.com/dashpilot/dashpilot-website#readme",
+    "devdependencies": {
+        "livereload": "^0.9.1"
+    },
     "dependencies": {
         "fs": "0.0.1-security",
         "handlebars": "^4.7.6",
