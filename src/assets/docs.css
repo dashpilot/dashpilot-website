@@ -145,6 +145,9 @@ section.post{
 .readmore {
     display: none;
     padding: 20px;
+    padding-top: 30px;
+    border: 1px solid #DDD;
+    border-top: 0;
 }
 
 @media only screen and (max-width: 1000px) {
