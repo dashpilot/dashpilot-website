@@ -135,7 +135,7 @@ section.post{
 .box .image {
     background-size: cover;
     background-position: center center;
-  
+    border-right: 1px solid #DDD;
 }
 
 .intro{
