@@ -119,7 +119,7 @@ code.language-json {
 }
 
 section.post{
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .box {
@@ -135,10 +135,8 @@ section.post{
 .box .image {
     background-size: cover;
     background-position: center center;
-    border-right: 1px solid #DDD;
+  
 }
-
-
 
 .intro{
   padding: 20px;
