@@ -1,6 +1,6 @@
 var fs = require("fs");
 var handlebars = require("handlebars");
-const marked = require('marked');
+// const marked = require('marked');
 
 console.log("starting build...");
 
@@ -11,26 +11,22 @@ handlebars.registerHelper("ifEq", function(v1, v2, options) {
   return options.inverse(this);
 });
 
-var data = fs.readFileSync("./public/content/data.json", "utf8");
+var data = fs.readFileSync("./public/data.json", "utf8");
 data = JSON.parse(data);
 
-// preprocess markdown
-var i = 0;
-data.entries.forEach(function(item) {
-  data.entries[i].body = marked.parse(item.body);
-  i++;
-});
 
 // docs
 let mydata = {};
-mydata.entries = data.entries.filter((x) => x.category == "docs");
+mydata.posts = data.posts.filter((x) => x.category == "docs");
 mydata.page = "Docs";
 compile(mydata, "docs.html", "docs.html");
 
+/*
 // blog
 mydata.entries = data.entries.filter((x) => x.category == "blog");
 mydata.page = "Blog";
 compile(mydata, "blog.html", "blog.html");
+*/
 
 // copy style
 var style = fs.readFileSync("./src/assets/docs.css", "utf8");
